@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이예지 PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .swiper {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #F2F2F1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        top: 50% !important;
+        transform: translateY(-50%);
+        left: 20px !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background: #737373;
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 20px;
+        height: 40px;
+        border-radius: 10px;
+        background: #669EC8;
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="lineMenu menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="web.html">WEB</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+            </ul>
+        </div>
+        <!--menu-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="circle01"></div>
+                    <div class="circle02"></div>
+                    <div class="mockup"><img src="img/hotel Mockup.png" alt="hotel"></div>
+                    <div class="mockupDetail">
+                        <ul class="topDetail">
+                            <li>01</li>
+                            <li><a href="hotel/index.html" target="_blank">JOSUN HOTELS &
+                                    RESORTS</a></li>
+                            <li>CLONE-CODING</li>
+                        </ul>
+                        <!--topDetail-->
+                        <ul class="bottomDetail">
+                            <li>
+                                <ul class="left">
+                                    <li>작업일 </li>
+                                    <li>구성</li>
+                                    <li>참여도</li>
+                                    <li>TOOL</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                            <li>
+                                <ul class="right">
+                                    <li>2023.04</li>
+                                    <li>Main</li>
+                                    <li>100%</li>
+                                    <li>Html, CSS, Javascrip, jQery, Swiper slide plugin</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                        </ul>
+                        <!--bottomDetali-->
+                    </div>
+                    <!--mockupDetail-->
+                </div>
+                <!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="circle01"></div>
+                    <div class="circle02"></div>
+                    <div class="mockup"><img src="img/subway Mockup.png" alt="subway"></div>
+                    <div class="mockupDetail">
+                        <ul class="topDetail">
+                            <li>02</li>
+                            <li><a href="subway/index.html" target="_blank">SUBWAY</a></li>
+                            <li>CLONE-CODING</li>
+                        </ul>
+                        <!--topDetail-->
+                        <ul class="bottomDetail">
+                            <li>
+                                <ul class="left">
+                                    <li>작업일 </li>
+                                    <li>구성</li>
+                                    <li>참여도</li>
+                                    <li>TOOL</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                            <li>
+                                <ul class="right">
+                                    <li>2023.05</li>
+                                    <li>Main</li>
+                                    <li>100%</li>
+                                    <li>Html, CSS, Javascrip, jQery, owl carousel slide plugin</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                        </ul>
+                        <!--bottomDetali-->
+                    </div>
+                    <!--mockupDetail-->
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle01"></div>
+                    <div class="circle02"></div>
+                    <div class="mockup"><img src="img/sw19 Mockup.png" alt="sw19"></div>
+                    <div class="mockupDetail">
+                        <ul class="topDetail">
+                            <li>03</li>
+                            <li><a href="sw19/index.html" target="_blank">SW19</a></li>
+                            <li>CLONE-CODING</li>
+                        </ul>
+                        <!--topDetail-->
+                        <ul class="bottomDetail">
+                            <li>
+                                <ul class="left">
+                                    <li>작업일 </li>
+                                    <li>구성</li>
+                                    <li>참여도</li>
+                                    <li>TOOL</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                            <li>
+                                <ul class="right">
+                                    <li>2023.05</li>
+                                    <li>Main + Sub</li>
+                                    <li>100%</li>
+                                    <li>Html, CSS, Javascrip, jQery, owl carousel slide plugin</li>
+                                </ul>
+                                <!--bottom-->
+                            </li>
+                        </ul>
+                        <!--bottomDetali-->
+                    </div>
+                    <!--mockupDetail-->
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                slidesPerView: 1,
+                mousewheel: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+            });
+        </script>
+</body>
+
+
+</html>

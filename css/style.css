@@ -156,6 +156,7 @@ main>h1 span {
     flex-flow: row wrap;
     font-size: 18px;
     width: 700px;
+    margin-top: 35px;
 }
 
 .webProject .web .project .content dl dt {

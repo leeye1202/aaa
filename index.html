@@ -5,43 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이예지 PORTFOLIO</title>
+    <title>이예지 Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/potofolio.js">
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-    <div class="wrap">
-        <p>LEE YE JI PORTFOLIO</p>
+    <header>
+        <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="img/이예지 이력서.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </header>
+    <main>
         <div class="intro">
-            <h1>PORTFOLIO</h1>
-            <ul>
-                <li>웹 디자이너</li>
-                <li>이예지 포트폴리오</li>
-            </ul>
-        </div>
-        <div class="circle01"></div>
-        <div class="circle02">
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="web.html">WEB</a></li>
-                    <li><a href="design.html">DESIGN</a></li>
-                </ul>
+            <div class="text">
+                <p>20<br>23</p>
+                <p>Portfolio</p>
             </div>
-            <!--menu-->
         </div>
-        <!--circle02-->
-        <div class="aboutFooter">
-            <ul>
-                <li>PHONE 010.1234.5678</li>
-                <li>E-MAIL leeye011202@naver.com</li>
-                <li>2023</li>
-            </ul>
+        <h1>안녕하세요<br>
+            <span class="hello"></span>
+        </h1>
+        <div class="webProject">
+            <div class="web web01">
+                <h1>01 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup01"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>JOSUN HOTELS & RESORTS</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, Swiper slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="hotel/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web web02">
+                <h1>02 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup02"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>SUBWAY</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, owl carousel slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="subway/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web web03">
+                <h1>03 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup03"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>SW19</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main + Sub Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, owl carousel slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="sw19/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--wrap-->
+        <div class="designProject">
+            <h1>04 design</h1>
+            <div class="design design">
+                <a href="img/design01.png" target="_blank"></a>
+                <a href="img/design02.png" target="_blank"></a>
+                <a href="img/design03.png" target="_blank"></a>
+                <a href="img/design04.png" target="_blank"></a>
+                <a href="img/design05.png" target="_blank"></a>
+                <a href="img/design06.png" target="_blank"></a>
+                <a href="img/design07.png" target="_blank"></a>
+                <a href="img/design08.png" target="_blank"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        leeye011202@naver.com <br>
+        010-8468-4086
+    </footer>
+
+    <script>
+        gsap.fromTo('.web01', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.web01',
+            duration: 0.8
+        })
+        gsap.fromTo('.web02', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.web03',
+            duration: 0.8
+        })
+        gsap.fromTo('.web03', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.designProject',
+            duration: 0.8
+        })
+    </script>
 </body>
 
 </html>

@@ -195,63 +195,6 @@ main>h1 span {
     background: #fff;
 }
 
-.designProject h1 {
-    text-transform: uppercase;
-    color: #6b6dd9;
-    font-weight: bold;
-    padding-bottom: 50px;
-}
-
-.designProject .design {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.designProject .design a {
-    height: 300px;
-    width: 23%;
-    margin: 10px;
-    background-size: cover;
-    background-position: center top;
-}
-
-.designProject .design a:hover {
-    opacity: 0.5;
-}
-
-.designProject .design a:nth-child(1) {
-    background-image: url(../img/design01.png)
-}
-
-.designProject .design a:nth-child(2) {
-    background-image: url(../img/design02.png)
-}
-
-.designProject .design a:nth-child(3) {
-    background-image: url(../img/design03.png)
-}
-
-.designProject .design a:nth-child(4) {
-    background-image: url(../img/design04.png)
-}
-
-.designProject .design a:nth-child(5) {
-    background-image: url(../img/design05.png)
-}
-
-.designProject .design a:nth-child(6) {
-    background-image: url(../img/design06.png)
-}
-
-.designProject .design a:nth-child(7) {
-    background-image: url(../img/design07.png)
-}
-
-.designProject .design a:nth-child(8) {
-    background-image: url(../img/design08.png)
-}
-
 footer {
     text-align: center;
     padding: 50px 0;

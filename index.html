@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이예지 Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>안녕하세요<br>
+            <span class="hello"></span>
+        </h1>
+        <div class="about">
+            <ul>
+                <li>
+                    <img src="img/img.jpg" alt="증명사진">
+                </li>
+                <li>
+                    <dl>
+                        <dt>이름</dt>
+                        <dd>이예지</dd>
+                        <dt>생년월일</dt>
+                        <dd>2001.12.02</dd>
+                        <dt>이메일</dt>
+                        <dd>leeye011202@naver.com</dd>
+                        <dt>학력</dt>
+                        <dd>대전보건대학교 의료IT융합과 졸업</dd>
+                        <dt>자격증</dt>
+                        <dd>웹 디자인 기능사, GTQ 1급</dd>
+                    </dl>
+                    <div class="link">
+                        <a href="img/이예지 이력서.pdf" target="_blank">이력서</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="webProject">
+            <div class="web web01">
+                <h1>01 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup01"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>JOSUN HOTELS & RESORTS</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, Swiper slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="hotel/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web web02">
+                <h1>02 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup02"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>SUBWAY</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, owl carousel slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="subway/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web web03">
+                <h1>03 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup03"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>SW19</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main + Sub Page</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, owl carousel slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="sw19/index.html" target="_blank">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="web web04">
+                <h1>04 Web</h1>
+                <div class="project">
+                    <div class="mockup mockup04"></div>
+                    <div class="content">
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd>MBL</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>Main</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>100% (1인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <dd>Html, CSS, Javascrip, jQery, owl carousel slide plugin</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="MBL/index.html" target="_blank">리뉴얼 Home Page</a>
+                            <a href="https://www.mblchildren.com/" target="_blank">기존 Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        leeye011202@naver.com
+    </footer>
+
+    <script>
+        gsap.fromTo('.web01', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.web01',
+            duration: 0.8
+        })
+        gsap.fromTo('.web02', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.web03',
+            duration: 0.8
+        })
+        gsap.fromTo('.web03', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: '.web04',
+            duration: 0.8
+        })
+        gsap.fromTo('.web04', {
+            //from
+            opacity: 0.1,
+        }, {
+            //to
+            opacity: 1,
+            scrollTrigger: 'footer',
+            duration: 0.8
+        })
+    </script>
+</body>
+
+</html>

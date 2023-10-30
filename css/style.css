@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 375px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #000;
+}
+
+main>h1 {
+    padding-top: 100px;
+    line-height: 40px;
+}
+
+main>h1 span {
+    color: #6b6dd9;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    height: 36px;
+    border-right: 0.05em solid #777;
+    animation: cursor 0.5s ease infinite;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.about ul {
+    width: 1200px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.about ul li {
+    width: 100%;
+}
+
+.about img {
+    width: 300px;
+}
+
+.about dl {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 18px;
+    width: 700px;
+    margin-top: 35px;
+}
+
+.about dl dt {
+    width: 30%;
+    padding: 12px 0;
+    font-weight: bold;
+    color: #6b6dd9;
+}
+
+.about dl dd {
+    width: 70%;
+    padding: 12px 0;
+}
+
+.about .link {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+
+.about .link a {
+    font-size: 18px;
+    text-transform: capitalize;
+    background: #6b6dd9;
+    border: 2px solid #6b6dd9;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    padding: 10px;
+}
+
+.about .link a:hover {
+    border: 2px solid #6b6dd9;
+    color: #6b6dd9;
+    background: #fff;
+}
+
+.webProject .web {
+    margin: 100px 0;
+}
+
+.webProject .web h1 {
+    text-transform: uppercase;
+    color: #6b6dd9;
+    font-weight: bold;
+}
+
+.webProject .web .project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.webProject .web .project .mockup {
+    height: 350px;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.webProject .web .project .mockup01 {
+    background-image: url(../img/hotelMockup.png);
+}
+
+.webProject .web .project .mockup02 {
+    background-image: url(../img/subwayMockup.png);
+}
+
+.webProject .web .project .mockup03 {
+    background-image: url(../img/sw19Mockup.png);
+}
+
+.webProject .web .project .mockup04 {
+    background-image: url(../img/MBLMockup.png);
+}
+
+.webProject .web .project .content {
+    padding-left: 100px;
+}
+
+.webProject .web .project .content dl {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 18px;
+    width: 700px;
+    margin-top: 35px;
+}
+
+.webProject .web .project .content dl dt {
+    width: 30%;
+    padding: 12px 0;
+    font-weight: bold;
+    color: #6b6dd9;
+}
+
+.webProject .web .project .content dl dd {
+    width: 70%;
+    padding: 12px 0;
+}
+
+.webProject .web .project .content .link {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+
+.webProject .web .project .content .link a {
+    font-size: 18px;
+    text-transform: capitalize;
+    background: #6b6dd9;
+    border: 2px solid #6b6dd9;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    padding: 10px;
+}
+
+.webProject .web .project .content .link a:hover {
+    border: 2px solid #6b6dd9;
+    color: #6b6dd9;
+    background: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    line-height: 26px;
+    color: #6b6dd9;
+    font-size: 16px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+@media screen and (max-width:850px) {
+    .about ul {
+        flex-flow: column nowrap;
+    }
+
+    .aobut ul li .img {
+        width: 100%;
+    }
+
+    .aobut ul li dl {
+        width: 100%;
+    }
+
+    .webProject .web .project {
+        flex-flow: column nowrap;
+    }
+
+    .webProject .web .project .img {
+        width: 100%;
+    }
+
+    .webProject .web .project .content {
+        width: 100%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.opacity {
+    animation: opacity 0.5s;
+}
